@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="style/form.css">
+</head>
+<body>
+    <div class="form">
+        <h2>My Theater List <div class="beta">beta</div></h2>
+        <h4>Who Are You?</h4>
+        <div class="formInput">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="username" name="username"> <br>
+            <label for="password">Password</label>
+            <div class="password-container">
+                <input type="password" name="password" id="password" placeholder="password">
+                <span class="toggle-password" onclick="togglePasswordVisibility()">🙈</span>
+            </div>
+        </div>
+        <button onclick="userRegister()">Register</button>
+        <h6>Alredy Have An Account? <a href="login.html">Login Here</a></h6>
+    </div>
+
+    <script src="js/register.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>
