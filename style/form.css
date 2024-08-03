@@ -1,10 +1,16 @@
+:root {
+    --primary: #A40606;
+    --bg: #02020A;
+    --main: #D3F3EE;
+    --second: #556568;
+}
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(77, 75, 75);
+    background-color: var(--bg);
     font-family: Arial, sans-serif;
     margin: 0;
 }
@@ -14,22 +20,22 @@ body {
 }
 
 .form {
-    background-color: #fff;
+    background-color: var(--primary);
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
     text-align: center;
     width: 300px;
 }
 
 .form h2 {
     margin-bottom: 1rem;
-    color: #333;
+    color: var(--main);
 }
 
 .form h4 {
     margin-bottom: 2rem;
-    color: #666;
+    color: var(--main);
 }
 
 .formInput {
@@ -48,14 +54,14 @@ body {
 }
 
 .formInput input:focus {
-    border-color: #007BFF;
+    border-color: var(--bg);
     outline: none;
 }
 
 .formInput label {
     display: block;
     margin-bottom: 0.5rem;
-    color: #333;
+    color: var(--main);
 }
 
 .password-container {
@@ -82,7 +88,7 @@ body {
 }
 
 button {
-    background-color: #007BFF;
+    background-color: var(--bg);
     color: white;
     padding: 0.75rem 1.5rem;
     border: none;
@@ -93,7 +99,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: var(--second);
 }
 
 button:focus {
@@ -102,17 +108,17 @@ button:focus {
 }
 
 button:active {
-    background-color: #004494;
+    background-color: var(--second);
 }
 
 .password-container input:focus {
-    border-color: #007BFF;
+    border-color: var(--bg);
     outline: none;
 }
 
 .form h6 {
     margin-top: 1rem;
-    color: #666;
+    color: var(--main);
 }
 
 .form h6 a {

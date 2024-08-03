@@ -5,19 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Theater List - BETA</title>
 
-    <style>
-        #logout {
-            display: none;
-        }
-    </style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- ICON WEB -->
+    <link rel="icon" type="image/x-icon" href="assets/icon/icon.png">
 
 </head>
 <body>
-    <div class="text" >
-        <a href="login.html" id="login">LOGIN</a>
-        <a href="login.html" id="logout" onclick="logOut()">LOGOUT</a>
-    </div>
 
+    <!-- NAVBAR START -->
+    <nav>
+        <div class="title">
+            <img src="assets/icon/icon.png" class="icon">
+            <h2>My <span>Theater</span> List</h2>
+        </div>
+        <ul class="nav-link">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">GENRE</a></li>
+        </ul>
+        <div class="nav-acc" onclick="userAcc()" >
+            <a href="login.html" id="login">LOGIN</a>
+            <a href="#" id="logout">LOGOUT</a>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- JS -->
     <script src="js/main.js"></script>
 </body>
 </html>
